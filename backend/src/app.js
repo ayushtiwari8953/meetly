@@ -39,6 +39,8 @@ app.use(express.urlencoded({ limit: "40kb", extended: true }));
 
 app.use("/api/v1/users", userRoutes);
 
+const PORT = process.env.PORT || 8000;
+
 // const start = async () => {
 //     app.set("mongo_user")
 //     const connectionDb = await mongoose.connect("mongodb+srv://shivsarra_db_user:Ayushtiwari@zoomcluster0.c850m6w.mongodb.net/?appName=ZoomCluster0")
